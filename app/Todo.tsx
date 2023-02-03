@@ -9,7 +9,7 @@ export default function Todo() {
   // sab chizai yaha likhni hai  other wise error a jy ga  < imp point >
 
   // creating a list of 
-const [todo,settodo]=useState()
+const [todo,settodo]:any=useState()
   const [todos, settodos] = useState([
     { todoText: "First", completed: true },
     { todoText: "second", completed: true },
@@ -40,13 +40,13 @@ const addtodo=()=>{
   
   const toddos= {todoText:todo ,completed:false}
 
-  const newtodos=[...todos,toddos]
+  const newtodos:any=[...todos,toddos]
 
   settodos(newtodos)
   
 }
 
-const deletetodo=(elms)=>{
+const deletetodo=(elms:any)=>{
 const newtodos=todos.filter((todo)=>{
 if(elms.todoText==todo.todoText)return false;
 
